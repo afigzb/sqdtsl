@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Scroll Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .hidden-header {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<header id="header" class="bg-white shadow fixed top-0 left-0 right-0 z-50 transition-transform">
+    <h1 class="p-4 text-xl">My Header</h1>
+</header>
+
+<main class="pt-16">
+    <div class="h-screen bg-blue-300">Scroll Down</div>
+    <div class="h-screen bg-green-300">Scroll Up</div>
+</main>
+
+<script>
+    let lastScrollTop = 0;
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.classList.add('hidden-header');
+        } else {
+            // Scrolling up
+            header.classList.remove('hidden-header');
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+</body>
+</html>

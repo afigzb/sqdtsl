@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-gray-100">
+
+    <div class="flex h-screen">
+        <!-- 左侧固定部分 -->
+        <div class="w-3/4 bg-white p-4">
+            <div class="sticky top-0">
+                <h2 class="text-xl font-bold mb-4">内容</h2>
+            </div>
+        </div>
+
+        <!-- 右侧滚动部分 -->
+        <div class="w-1/4 overflow-y-scroll p-4 h-screen">
+            <h1 class="text-3xl font-bold mb-4">滚动内容</h1>
+            <p class="mb-4">滚动界面</p>
+            <div class="space-y-8">
+                <div class="h-96 bg-blue-200 p-4">内容块 1</div>
+                <div class="h-96 bg-green-200 p-4">内容块 2</div>
+                <div class="h-96 bg-yellow-200 p-4">内容块 3</div>
+                <div class="h-96 bg-red-200 p-4">内容块 4</div>
+                <div class="h-96 bg-purple-200 p-4">内容块 5</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

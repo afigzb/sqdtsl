@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/特斯拉图标.jpg" type="image">
+  <title>特斯拉中国</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+    
+<div id="carousel-bg" class="relative flex-grow transition-all duration-1000 ease-in-out 
+bg-[url('./img/特斯拉首页背景图.jpg')] bg-cover bg-center bg-gray-100 flex flex-col h-screen min-h-screen">
+
+  <!-- 页眉 -->
+  <header class="p-2 text-black bg-opacity-85 z-50 fixed top-0 w-full bg-white">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <div class="flex-shrink-0">
+        <button class="text-2xl font-extrabold ">T E S L A </button>
+      </div>
+      <nav class="flex flex-grow justify-center">
+        <ul class="flex justify-center items-center space-x-4">
+          <li><a href="#" class="hidden md:block hover:bg-gray-400 hover:scale-105 transition-all duration-1000 px-4 py-2 rounded-lg">车辆</a></li>
+          <li><a href="#" class="hidden md:block hover:bg-gray-400 hover:scale-105 transition-all duration-1000 px-4 py-2 rounded-lg" id="open-panel">能源</a></li>
+          <li><a href="#" class="hidden md:block hover:bg-gray-400 hover:scale-105 transition-all duration-1000 px-4 py-2 rounded-lg">充电</a></li>
+          <li><a href="#" class="hidden md:block hover:bg-gray-400 hover:scale-105 transition-all duration-1000 px-4 py-2 rounded-lg">发现</a></li>
+          <li><a href="#" class="hidden md:block hover:bg-gray-400 hover:scale-105 transition-all duration-1000 px-4 py-2 rounded-lg">在线商店</a></li>
+        </ul>
+      </nav>
+      
+      <div class="flex items-center space-x-4 flex-shrink-0 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" class="hover:bg-gray-300">
+          <!-- 问号图标 -->
+          <path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"/>
+        </svg>
+        <!-- 用户图标 -->
+        <a href="./Logon.html" class="hover:bg-gray-300 inline-block p-2 rounded transition duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" class="hover:bg-gray-300">
+              <path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24M74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0M96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32m97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0"/>
+          </svg>
+      </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 正文部分 -->
+  <main class="flex-grow z-20 ">
+    <!-- 车型标题和购买信息 -->
+    <div class="absolute top-32 left-1/2 transform -translate-x-1/2">
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-3xl mb-4 font-bold">Model Y</h1>
+        <div class="transition ease-in-out  duration-300">
+          <button class="border-b border-gray-500 hover:border-b-2 hover:border-gray-600 
+          duration-300">
+            获取限时5年0息金融方案，月贡¥2.833
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 按钮部分 -->
+    <div class="absolute top-2/3 w-full flex justify-center md:space-x-10 translate-y-16 flex-col sm:flex-row ">
+      <button class="bg-gray-800 text-white p-2 md:h-12 md:w-64 h-12 w-screen rounded-md
+       transform transition duration-300 hover:scale-105">
+        定制我的 model Y
+      </button>
+      <button class="bg-white text-black p-2 md:h-12 md:w-64 h-12 w-screen rounded-md 
+      transform transition duration-300 hover:scale-105">
+        预约试驾
+      </button>
+    </div>
+
+    <!-- 对话框svg -->
+    <div class="hidden md:block">
+      <div class="fixed top-3/4 translate-y-24 right-20 bg-gray-800 h-11 w-14 rounded-xl flex items-center 
+      justify-center transition duration-300 ease-in-out group hover:bg-white">
+        <!-- 白色的SVG，默认显示 -->
+        <svg class="block group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+          <path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M87.48 380c1.2-4.38-1.43-10.47-3.94-14.86a43 43 0 0 0-2.54-3.8a199.8 199.8 0 0 1-33-110C47.64 139.09 140.72 48 255.82 48C356.2 48 440 117.54 459.57 209.85a199 199 0 0 1 4.43 41.64c0 112.41-89.49 204.93-204.59 204.93c-18.31 0-43-4.6-56.47-8.37s-26.92-8.77-30.39-10.11a31.1 31.1 0 0 0-11.13-2.07a30.7 30.7 0 0 0-12.08 2.43L81.5 462.78a16 16 0 0 1-4.66 1.22a9.61 9.61 0 0 1-9.58-9.74a16 16 0 0 1 .6-3.29Z"/>
+          <circle cx="160" cy="256" r="32" fill="white"/>
+          <circle cx="256" cy="256" r="32" fill="white"/>
+          <circle cx="352" cy="256" r="32" fill="white"/>
+        </svg>
+        <!-- 黑色的SVG，默认隐藏，悬停时显示 -->
+        <svg class="hidden group-hover:block" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+          <path fill="none" stroke="black" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M87.48 380c1.2-4.38-1.43-10.47-3.94-14.86a43 43 0 0 0-2.54-3.8a199.8 199.8 0 0 1-33-110C47.64 139.09 140.72 48 255.82 48C356.2 48 440 117.54 459.57 209.85a199 199 0 0 1 4.43 41.64c0 112.41-89.49 204.93-204.59 204.93c-18.31 0-43-4.6-56.47-8.37s-26.92-8.77-30.39-10.11a31.1 31.1 0 0 0-11.13-2.07a30.7 30.7 0 0 0-12.08 2.43L81.5 462.78a16 16 0 0 1-4.66 1.22a9.61 9.61 0 0 1-9.58-9.74a16 16 0 0 1 .6-3.29Z"/>
+          <circle cx="160" cy="256" r="32" fill="black"/>
+          <circle cx="256" cy="256" r="32" fill="black"/>
+          <circle cx="352" cy="256" r="32" fill="black"/>
+        </svg>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 能源抽屉的实现 -->
+  <div class="relative">
+    <div id="slide-over" class="relative z-30 hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+        <div class="fixed inset-0 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="pointer-events-auto relative w-screen h-1/3 top-0">
+                    <div class="flex h-full flex-row bg-white py-6 shadow-xl transition-transform transform translate-x-full" id="panel-content">
+                        <div class="px-4 sm:px-6">
+
+                            
+                            <div class="flex h-1/2 w-screen bg-white">
+                                <div class=" w-2/3 flex flex-wrap justify-center items-start p-4 gap-4 ml-64">
+                                    
+                                    <div class="flex flex-col items-center w-1/4 p-2 bg-white rounded shadow-md">
+                                        <img src="https://via.placeholder.com/150" alt="图片1" class="w-full h-24 object-cover rounded">
+                                        <span>
+                                            name
+                                        </span>
+                                        <div class="flex justify-between  ">
+                                            <button class=" text-black py-1 px-2 border-b border-gray-300">了解</button>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="flex flex-col items-center w-1/4 p-2 bg-white rounded shadow-md">
+                                        <img src="https://via.placeholder.com/150" alt="图片1" class="w-full h-24 object-cover rounded">
+                                        <span>
+                                            name
+                                        </span>
+                                        <div class="flex justify-between  ">
+                                            <button class=" text-black py-1 px-2 border-b border-gray-300">了解</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class=" w-1/3 flex">
+                                    <ul class="leading-8 ml-20 absolute top-14">
+                                        <li>共用能源</li>
+                                        <li>商用能源</li>
+                                    </ul>
+                        
+                                </div>
+                            </div>
+                            <div class="absolute h-1/2 w-0.5 bg-black left-2/3 top-16 z-10"></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+  <script>
+      const openPanelButton = document.getElementById('open-panel');
+      const slideOver = document.getElementById('slide-over');
+      const panelContent = document.getElementById('panel-content');
+
+      // 悬停打开面板
+      openPanelButton.addEventListener('mouseover', () => {
+          slideOver.classList.remove('hidden');
+          setTimeout(() => {
+              panelContent.classList.remove('translate-x-full');
+          }, 10);
+      });
+
+      // 关闭面板的函数
+      const closePanel = () => {
+          panelContent.classList.add('translate-x-full');
+          setTimeout(() => {
+              slideOver.classList.add('hidden');
+          }, 300);
+      };
+
+      // 监听面板的mouseleave事件
+      panelContent.addEventListener('mouseleave', (event) => {
+          // 检查鼠标是否完全离开面板及按钮
+          if (!openPanelButton.contains(event.relatedTarget)) {
+              closePanel();
+          }
+      });
+  </script>
+<!-- 第二个页面 -->
+</div>
+    <div class="h-screen bg-[url('./img/特斯拉背景图黑车.jfif')] bg-cover flex justify-center items-center flex-col overflow-hidden">
+      <div class=" h-1/2 w-screen flex items-center justify-center">
+        <div class=" mt-24 ">
+          <h1 class="font-bold text-center mb-6 text-3xl text-white">Model 3</h1>
+          <button class="text-white border-b-2 border-gray-300 transform transition-all duration-300 hover:border-b-4 ">获取限时 5 年 0 息金融方案，月供 ¥2,533</button>
+        </div>
+      </div>
+      <div class=" h-1/2 w-screen flex items-center justify-center">
+        <div class=" flex space-x-12 mt-16 ">
+          <button class="bg-gray-800 text-white p-2 md:h-12 md:w-64 h-12 w-screen rounded-md
+          transform transition duration-300 hover:scale-105">
+           定制我的 Model 3
+         </button>
+         <button class="bg-white text-black p-2 md:h-12 md:w-64 h-12 w-screen rounded-md 
+         transform transition duration-300 hover:scale-105">
+           预约试驾
+         </button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+

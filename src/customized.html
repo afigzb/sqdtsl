@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar Layout with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 隐藏滚动条但仍能滚动 */
+        .scroll-hidden::-webkit-scrollbar {
+            display: none; /* Safari 和 Chrome */
+        }
+        .scroll-hidden {
+            -ms-overflow-style: none; /* Internet Explorer 和 Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    </style>
+</head>
+<body class="h-screen bg-gray-100">
+
+    <div class="flex h-screen">
+        <!-- 固定部分 -->
+        <div class="w-3/4 bg-white p-4">
+            <div class="sticky top-0">
+                <h2 class="text-xl font-bold mb-4">正文内容</h2>
+            </div>
+        </div>
+
+        <!-- 滚动部分 -->
+        <div class="w-1/4 overflow-y-scroll p-4 h-screen scroll-hidden">
+            <h1 class="text-3xl font-bold mb-4">右侧滚动内容</h1>
+            <p class="mb-4">滚动界面</p>
+            <!-- 滚动内容 -->
+            <div class="space-y-8">
+                <div class="h-96 bg-blue-200 p-4">内容块 1</div>
+                <div class="h-96 bg-green-200 p-4">内容块 2</div>
+                <div class="h-96 bg-yellow-200 p-4">内容块 3</div>
+                <div class="h-96 bg-red-200 p-4">内容块 4</div>
+                <div class="h-96 bg-purple-200 p-4">内容块 5</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

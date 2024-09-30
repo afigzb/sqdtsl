@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeslaLogon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- 页眉 -->
+  <header class=" ">
+    <img class="mx-auto  w-auto" src="#" alt="tesla">
+  </header>
+
+  <!-- 主体内容 -->
+  <main class=" flex-grow flex flex-col px-6 py-1 ">
+    <div class="sm:mx-auto sm:w-full mt-16 sm:max-w-sm">
+      <h2 class="text-4xl font-bold leading-9 tracking-tight text-gray-900">登录</h2>
+    </div>
+
+    <div class="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form class="space-y-6" action="#" method="POST">
+        <div>
+          <div class="flex gap-x-2 items-center">
+            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">请输入邮箱或者电话</label>
+            <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" stroke-linecap="round"/>
+                <path stroke-width="1.5" d="M12 16h.01v.01H12z"/>
+                <path stroke-linecap="round" d="M10.586 7.586c.39-.39.9-.585 1.41-.586a2 2 0 0 1 1.418.586c.39.39.586.902.586 1.414s-.195 1.024-.586 1.414a2 2 0 0 1-1.418.586L12 12"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3.5 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600">下一个</button>
+        </div>
+      </form>
+
+      <div class="flex justify-center items-center mt-8">
+        <button class="underline text-gray-500">登录时遇到问题?</button>
+      </div>
+
+      <div class="flex items-center mt-10">
+        <div class="w-1/2 border-b border-gray-300"></div>
+        <span class="px-3 text-gray-500">或</span>
+        <div class="w-1/2 border-b border-gray-300"></div>
+      </div>
+
+      <div class="flex justify-center items-center bg-gray-100 rounded-md mt-10 px-3.5 py-2 transition duration-300 hover:bg-gray-300">
+        <a href="./Registr.html">
+          <button>创建用户</button>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class=" py-4 text-center">
+    <div class="flex justify-center space-x-16">
+      <button>Tesla 2024</button>
+      <button>隐私条例</button>
+      <button>联系我们</button>
+    </div>
+  </footer>
+</body>
+
+
+
+</html>
